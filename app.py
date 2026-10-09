@@ -18,7 +18,7 @@ LOCK = threading.RLock()
 STATE = dict(phase='opening', message='Đang mở Chrome…', ready=False, running=False, posts=0, comments=0, target=20, source='', results=[])
 STATE['version'] = '2.4-startup-timeout'
 ROWS = {}
-HELPERS = (ROOT.parent / 'extension' / 'helpers.js').read_text(encoding='utf-8')
+HELPERS = (ROOT / 'helpers.js').read_text(encoding='utf-8')
 DOM = (ROOT / 'dom.js').read_text(encoding='utf-8')
 
 def update(**values):

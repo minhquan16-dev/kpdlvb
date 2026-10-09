@@ -12,7 +12,7 @@ Vào nhóm/trang, chọn thứ tự bài mới nhất nếu Facebook hỗ trợ.
 
 Công cụ cuộn bảng tin để tìm link, mở từng bài ở tab riêng, ghi nhận nội dung văn bản, mở phản hồi và cuộn vùng bình luận. Giới hạn tìm link là giá trị lớn hơn giữa 60 và 3 lần số bài đã chọn; giới hạn 3 phút/bài và 10.000 mẫu toàn bộ. Dừng hoạt động khi xác minh/hạn chế. Không CAPTCHA bypass, không proxy, không tắt dấu hiệu WebDriver. Tất cả nhãn để trống.
 
-`data/progress.json` tự lưu nguyên tử sau mỗi lượt đọc và mỗi bài. Lần mở lại nhập tiến độ đã lưu; mẫu cùng mã bài và mã bình luận được cập nhật nếu văn bản dài hơn. Với cùng URL nguồn, bài có lý do `no_progress` được bỏ qua lần chạy tiếp theo; lý do đó không chứng minh đầy đủ. Muốn quét lại từ đầu, giữ bản sao dữ liệu rồi đổi tên progress.json khi chương trình đã tắt. Không cần xóa dữ liệu. JSON tương thích trang gán nhãn `../index.html`.
+`data/progress.json` tự lưu nguyên tử sau mỗi lượt đọc và mỗi bài. Lần mở lại nhập tiến độ đã lưu; mẫu cùng mã bài và mã bình luận được cập nhật nếu văn bản dài hơn. Với cùng URL nguồn, bài có lý do `no_progress` được bỏ qua lần chạy tiếp theo; lý do đó không chứng minh đầy đủ. Muốn quét lại từ đầu, giữ bản sao dữ liệu rồi đổi tên progress.json khi chương trình đã tắt. Không cần xóa dữ liệu. JSON có thể tải về để xử lý hoặc gán nhãn bằng công cụ riêng. Repository này chỉ chứa công cụ Selenium.
 
 Lý do kết thúc bài: `no_progress` = không có tiến triển qua 5 lượt; `time_limit` = hết 3 phút; `unrecognized_scope` / `unrecognized_scroll` = không nhận diện cấu trúc; `user_stop` = người dùng dừng; `dataset_limit` = đạt giới hạn. Không biến bất kỳ lý do nào thành tuyên bố đã lấy hết.
 
